@@ -10,7 +10,7 @@ miro.onReady(() => {
         title: 'Layers',
         svgIcon: icon,
         onClick: function () {
-          miro.board.ui.openLeftSidebar('sidebar.html')
+          miro.board.ui.openLeftSidebar('learnMiro/sidebar.html')
         }
       }
     }

@@ -66,12 +66,24 @@
 
 <body>
 <div class="rtb-sidebar-caption">Testing</div>
-<div class="container" onclick="openStuff">
+<div class="container" onclick="createItem">
 	My test
 
 </div>
 
 <script>
+	
+var createItem = () => {
+	miro.board.widgets.create({
+  "type": "sticker",
+  "text": "some text",
+  "metadata": {
+    "my_app": {
+      "var": 1
+    }
+  }
+})
+}
 
 </script>
 </body>

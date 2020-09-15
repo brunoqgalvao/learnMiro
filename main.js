@@ -20,9 +20,14 @@ miro.onReady(() => {
 
 // selection and show form
 miro.addListener('SELECTION_UPDATED', event => {
-	selected = event.data[0]
-	if(selected) miro.board.ui.openModal("learnMiro/metadataModal.html")
+  selected = event.data[0]
+  console.log(selected)
+	// if(selected) miro.board.ui.openModal("learnMiro/metadataModal.html")
 })
+
+var openModal = () => {
+  
+}
 
 })
 

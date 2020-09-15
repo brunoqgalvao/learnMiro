@@ -4,7 +4,7 @@ let icon = '<g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-widt
   + '    </g>'
 
 miro.onReady(() => {
-  
+
   miro.initialize({
     extensionPoints: {
       bottomBar: {
@@ -18,10 +18,8 @@ miro.onReady(() => {
   })
 
 
-
-
 // selection and show form
-miro.board.addListener('SELECTION_UPDATED', event => {
+miro.addListener('SELECTION_UPDATED', event => {
 	selected = event.data[0]
 	if(selected) miro.board.ui.openModal("metadataModal.html")
 })

@@ -85,6 +85,14 @@ var createItem = () => {
 })
 }
 
+
+// selection and show form
+miro.addListener('SELECTION_UPDATED', event => {
+	selected = event.data[0]
+	if(selected) miro.board.ui.openModal("metadataModal.html")
+})
+
+
 </script>
 </body>
 </html>
